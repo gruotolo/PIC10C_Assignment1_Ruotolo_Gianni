@@ -62,13 +62,16 @@ class Hand {
 public:
 	// A vector of Cards
 	Hand();
+	//adds new card to your hand
 	void addcard();
-	// You decide what functions you'll need...
+	//return total rank of all the cards in your hand
+	int returntotalrank();
+	
 
 private:
 	vector<Card> cards;
 	int totalrank=0;
-	// You decide what fields you'll need...
+	
 };
 
 
