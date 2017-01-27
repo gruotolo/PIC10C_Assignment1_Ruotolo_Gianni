@@ -146,3 +146,25 @@ Hand class
 Player class
 ************************************************* */
 // Implemente the member functions of the Player class here.
+
+// Constructor. 
+//    Assigns initial amount of money
+Player::Player(int m)
+{
+	money = m;
+}
+//removes money if player loses bet 
+void Player::losebet(int m)
+{
+	money -= m;
+}
+//adds money if player loses bet 
+void Player::winbet(int m)
+{
+	money += m;
+}
+//accessor returns amount of money in player
+int Player::returnmoney()
+{
+	return money;
+}
