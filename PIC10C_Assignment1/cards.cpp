@@ -207,6 +207,16 @@ void Hand::addcard()
 	cout << "\n " << newcard.get_spanish_rank() << " de " << newcard.get_spanish_suit() << "    ("
 		<< newcard.get_english_rank() << " of " << newcard.get_english_suit() << ").";
 }
+//this function outputs your hand to the console
+void Hand::outputhand()
+{
+	for (int i = 0; i < cards.size(); i++)
+	{
+		cout << "\n " << cards[i].get_spanish_rank() << " de " << cards[i].get_spanish_suit() << "    ("
+			<< cards[i].get_english_rank() << " of " << cards[i].get_english_suit() << ").";
+	}
+
+}
 // return total rank of all the cards in your hand
 int Hand::returntotalrank()
 {
