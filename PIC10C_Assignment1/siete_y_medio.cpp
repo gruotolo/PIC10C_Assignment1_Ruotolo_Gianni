@@ -38,7 +38,7 @@ int main() {
 			cout << "\n new card: \n";
 			yourhand.addcard();
 			cout << "\n your cards: \n";
-				//insert print cards here
+			yourhand.outputhand();
 			cout << "\n your total is: " << yourhand.returntotalrank();
 			cout << "    Do you want another card? (y/n):";
 			cin >> answer;

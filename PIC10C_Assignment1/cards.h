@@ -66,7 +66,7 @@ public:
 	void addcard();
 	//return total rank of all the cards in your hand
 	int returntotalrank();
-	
+	void outputhand();
 
 private:
 	vector<Card> cards;
