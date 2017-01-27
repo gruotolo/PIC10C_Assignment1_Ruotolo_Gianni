@@ -188,7 +188,7 @@ bool Card::operator < (Card card2) const {
 /* *************************************************
 Hand class
 ************************************************* */
-// Implemente the member functions of the Hand class here.
+// constructor to hand class
 Hand::Hand()
 {
 	Card newcard;
@@ -198,6 +198,7 @@ Hand::Hand()
 		<< newcard.get_english_rank() << " of " << newcard.get_english_suit() << ").";
 
 }
+//add random card to existing hand
 void Hand::addcard()
 {
 	Card newcard;
@@ -206,7 +207,11 @@ void Hand::addcard()
 	cout << "\n " << newcard.get_spanish_rank() << " de " << newcard.get_spanish_suit() << "    ("
 		<< newcard.get_english_rank() << " of " << newcard.get_english_suit() << ").";
 }
-
+// return total rank of all the cards in your hand
+int Hand::returntotalrank()
+{
+	return totalrank;
+}
 
 /* *************************************************
 Player class
@@ -229,7 +234,7 @@ void Player::winbet(int m)
 {
 	money += m;
 }
-//accessor returns amount of money in player
+// returns amount of money in player
 int Player::returnmoney()
 {
 	return money;
