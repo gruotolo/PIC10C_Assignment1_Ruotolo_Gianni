@@ -45,8 +45,7 @@ int main() {
 		}
 		cin.get();
 		cin.get();
-		mybugfunction()
-			;;
+		//removed bug for you here other Gianni!
 
 
 
