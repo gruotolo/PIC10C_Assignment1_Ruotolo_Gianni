@@ -67,7 +67,7 @@ public:
 
 private:
 	vector<Card> cards;
-	int totalrank;
+	int totalrank=0;
 	// You decide what fields you'll need...
 };
 

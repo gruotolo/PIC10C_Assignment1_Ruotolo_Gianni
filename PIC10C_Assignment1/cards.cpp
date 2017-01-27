@@ -110,13 +110,63 @@ string Card::get_spanish_rank() const {
 // Accessor: returns a string with the suit of the card in English 
 // This is just a stub! Modify it to your liking.
 string Card::get_english_suit() const {
-	return "";
+	string suitName;
+	switch (suit) {
+	case OROS:
+		suitName = "coins";
+		break;
+	case COPAS:
+		suitName = "cups";
+		break;
+	case ESPADAS:
+		suitName = "spades";
+		break;
+	case BASTOS:
+		suitName = "clubs";
+		break;
+	default: break;
+	}
+	return suitName;
 }
 
 // Accessor: returns a string with the rank of the card in English 
 // This is just a stub! Modify it to your liking.
 string Card::get_english_rank() const {
-	return "";
+	string rankName;
+	switch (rank) {
+	case AS:
+		rankName = "ace";
+		break;
+	case DOS:
+		rankName = "two";
+		break;
+	case TRES:
+		rankName = "three";
+		break;
+	case CUATRO:
+		rankName = "four";
+		break;
+	case CINCO:
+		rankName = "five";
+		break;
+	case SEIS:
+		rankName = "six";
+		break;
+	case SIETE:
+		rankName = "seven";
+		break;
+	case SOTA:
+		rankName = "Jack";
+		break;
+	case CABALLO:
+		rankName = "knight";
+		break;
+	case REY:
+		rankName = "king";
+		break;
+	default: break;
+	}
+	return rankName;
 }
 
 
@@ -139,7 +189,23 @@ bool Card::operator < (Card card2) const {
 Hand class
 ************************************************* */
 // Implemente the member functions of the Hand class here.
+Hand::Hand()
+{
+	Card newcard;
+	cards.push_back(newcard);
+	totalrank = newcard.get_rank();
+	cout << "\n " << newcard.get_spanish_rank() << " de " << newcard.get_spanish_suit() << "    ("
+		<< newcard.get_english_rank() << " of " << newcard.get_english_suit() << ").";
 
+}
+void Hand::addcard()
+{
+	Card newcard;
+	cards.push_back(newcard);
+	totalrank += newcard.get_rank();
+	cout << "\n " << newcard.get_spanish_rank() << " de " << newcard.get_spanish_suit() << "    ("
+		<< newcard.get_english_rank() << " of " << newcard.get_english_suit() << ").";
+}
 
 
 /* *************************************************

@@ -19,5 +19,21 @@ using namespace std;
 // Stub for main
 int main() {
 	/* --STATEMENTS-- */
+	Player you(100);
+	Player dealer(900);
+	//while (you.returnmoney() > 0 && dealer.returnmoney() > 0)
+	//{
+		int bet = 0;
+		cout << "you have $" << you.returnmoney() << ".  Enter bet: ";
+		cin >> bet;
+		cout << "\nYour cards: ";
+		Hand yourhand;
+		cout << "your total is ";
+		cin.get();
+		cin.get();
+
+
+
+	/*}*/
 	return 0;
 }

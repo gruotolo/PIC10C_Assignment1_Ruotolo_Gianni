@@ -2,3 +2,5 @@
 PIC10C_Assignment1/PIC10C_Assignment1.VC.db
 *.opendb
 PIC10C_Assignment1/PIC10C_Assignment1.vcxproj.filters
+*.tlog
+PIC10C_Assignment1/Debug/vc140.idb
