@@ -45,6 +45,8 @@ int main() {
 		}
 		cin.get();
 		cin.get();
+		mybugfunction()
+			;;
 
 
 
